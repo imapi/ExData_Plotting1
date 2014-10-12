@@ -1,6 +1,7 @@
 data_file <- "household_power_consumption.txt"
 
-# Read first row to get start datetime, column classes, column names
+# Read first row to get start datetime, column classes, column names (Christopher D. Long method)
+
 
 first_row <- read.table(data_file, header = TRUE,
                         sep = ";", na.strings = "?", stringsAsFactors = FALSE,
